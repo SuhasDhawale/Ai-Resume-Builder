@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import SignInPage from './auth/sign-in/index.jsx'
 import Home from './home/index.jsx'
+import Dashboard from './dashboard/index.jsx'
 
 const router=createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router=createBrowserRouter([
       {
         path:'/',
         element:<Home/>
+      },
+      {
+        path:'/dashboard',
+        element:<Dashboard/>
       }
     ]
   },
