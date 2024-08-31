@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AddResume from './components/AddResume'
+import GlobalApi from './../../service/GlobalApi';
+import { useUser } from '@clerk/clerk-react';
 
 function Dashboard() {
+const {user}=useUser();
+
+useEffect(()=>{
+ user&&GetResumesList()
+},[user])
+
+  const GetResumesList=()=>{
+    GlobalApi.GetUserResumes(user?.primaryEmailAddress?.emailAddress).then(resp=>{
+      console.log(resp.data);
+    })
+
+  }
   return (
     <div className='p-10 md:px-20 lg:px-32'>
       <h2 className='font-bold text-3xl'>My Resume</h2>
