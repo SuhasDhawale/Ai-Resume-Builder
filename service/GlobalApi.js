@@ -20,7 +20,7 @@ const CreateNewResume = async (data) => {
     }
 };
 
-const GetUserResumes=(userEmail)=>axiosClient.get('/user-resumes');
+const GetUserResumes=(userEmail)=>axiosClient.get('/user-resumes?filters[userEmail][$eq]='+userEmail);
 
 export default {
     CreateNewResume,

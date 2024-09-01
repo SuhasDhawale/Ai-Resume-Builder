@@ -19,7 +19,7 @@ function AddResume() {
     const [resumeTitle, setResumeTitle] = useState('');
     const { user } = useUser();
     const [loading, setLoading] = useState(false);
-    const navigate = useNavigate();
+    const navigation=useNavigate();
 
     const onCreate = async () => {
         setLoading(true);
@@ -40,8 +40,8 @@ function AddResume() {
 
             if (response && response.data) {
                 setLoading(false);
-               
                 setOpenDialog(false); // Close the dialog on successful creation
+                navigation('/dashboard/resume/'+uuid+"/edit")
             }
         } catch (error) {
             console.error("Error creating new resume:", error.response ? error.response.data : error.message);
