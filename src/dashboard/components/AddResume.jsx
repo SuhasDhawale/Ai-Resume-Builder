@@ -32,22 +32,22 @@ function AddResume() {
                 userName: user?.fullName
             }
         };
-
+    
         try {
             console.log("Sending data:", data);
             const response = await GlobalApi.CreateNewResume(data);
-            console.log("Response received:", response.data);
-
+            console.log("Response received:", response.data.data.documentId);
+    
             if (response && response.data) {
                 setLoading(false);
-                setOpenDialog(false); // Close the dialog on successful creation
-                navigation('/dashboard/resume/'+uuid+"/edit")
+                navigation('/dashboard/resume/' + response.data.data.documentId + "/edit");
             }
         } catch (error) {
             console.error("Error creating new resume:", error.response ? error.response.data : error.message);
             setLoading(false);
         }
     };
+    
 
     return (
         <div>
