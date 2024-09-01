@@ -8,7 +8,10 @@ function EditResume() {
         console.log(params.resumeId)
     },[])
   return (
-    <div>EditResume</div>
+    <div className='grid grid-col-1 md:grid-cols-2 p-10 gap-10'>
+      
+
+    </div>
   )
 }
 
