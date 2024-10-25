@@ -19,9 +19,9 @@ function App() {
 
   return (
     <>
-    <Header />
-    <Outlet/>
-    <Toaster/>
+      <Header/>
+      <Outlet/>
+      <Toaster />
     </>
   )
 }

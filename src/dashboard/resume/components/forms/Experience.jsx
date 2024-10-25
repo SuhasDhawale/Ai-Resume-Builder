@@ -24,12 +24,10 @@ function Experience() {
     const params=useParams();
     const [loading,setLoading]=useState(false);
 
-    useEffect(() => {
-        if (resumeInfo?.Experience && resumeInfo.Experience.length > 0) {
-            setExperinceList(resumeInfo.Experience);
-        }
-    }, [resumeInfo]);
-    
+    useEffect(()=>{
+        resumeInfo?.Experience.length>0&&setExperinceList(resumeInfo?.Experience)
+        
+    },[])
 
     const handleChange=(index,event)=>{
         const newEntries=experinceList.slice();
