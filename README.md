@@ -85,16 +85,48 @@ VITE_GOOGLE_AI_API_KEY=Your_google_gemini_api_key
 VITE_BASE_URL=Your_backend_server_url
 ```
 
-Install Dependencies
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-Run the Frontend
+### Run the Frontend
 
 ```bash
 npm run dev
 ```
 
 The application will be available at http://localhost:5173.
+
+---
+
+## Backend (Strapi) Setup
+
+1. Install Strapi globally:
+
+```bash
+npm install -g create-strapi-app
+```
+
+2. Create a new Strapi project or clone your existing Strapi backend:
+
+```bash
+npx create-strapi-app backend --quickstart
+```
+
+3. Configure the content types and endpoints for user-resumes.
+
+4. Generate an API key from Strapi Admin and use it in the .env file.
+
+5. Start Strapi:
+
+```bash
+cd backend
+npm run develop
+```
+
+Strapi will run at http://localhost:1337.
+
+---
+
