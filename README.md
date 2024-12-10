@@ -6,6 +6,11 @@ AI Resume Builder is a web-based application that helps users effortlessly creat
 
 ## Screenshots
 
+### Home Screen
+This is the landing page of the application.
+![Home Screen](./screenshots/landingScreen.png)
+
+
 ## Features
 
 - **Dynamic Resume Creation**: Add, update and delete professional experience, skills and educational qualifications.
