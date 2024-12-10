@@ -1,12 +1,14 @@
 # AI Resume Builder
 
-AI Resume Builder is a web-based application that helps users effortlessly create professional resumes. The app provides features such as adding professional experience, education, skills, and customizing the layout using various themes. It also includes capabilities like editing, deleting, and downloading resumes.
+AI Resume Builder is a web-based application that helps users effortlessly create professional resumes. The app provides features such as adding professional experience, education, skills and customizing the layout using various themes. It also includes capabilities like editing, deleting and downloading resumes.
 
 ---
 
+## Screenshots
+
 ## Features
 
-- **Dynamic Resume Creation**: Add, update, and delete professional experience, skills, and educational qualifications.
+- **Dynamic Resume Creation**: Add, update and delete professional experience, skills and educational qualifications.
 - **Theming**: Customize your resume with gradient themes and dynamic colors.
 - **Preview & Download**: Preview and download resumes in various formats.
 - **API Integration**: Uses Strapi for backend management.
