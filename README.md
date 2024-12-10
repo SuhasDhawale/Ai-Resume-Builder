@@ -151,5 +151,7 @@ src/
 5. Preview or download the resume.
 ---
 
+## Contributions
 
+Contributions are welcome! Feel free to fork the repository and submit pull requests. For major changes, please open an issue to discuss what you would like to change.
 
