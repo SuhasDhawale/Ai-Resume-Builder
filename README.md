@@ -84,3 +84,17 @@ VITE_GOOGLE_AI_API_KEY=Your_google_gemini_api_key
 
 VITE_BASE_URL=Your_backend_server_url
 ```
+
+Install Dependencies
+
+```bash
+npm install
+```
+
+Run the Frontend
+
+```bash
+npm run dev
+```
+
+The application will be available at http://localhost:5173.
