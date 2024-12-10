@@ -23,7 +23,7 @@ Edit and customize resumes with multiple options like Personal Details, Summary,
 ![Resume Editor](./screenshots/education.png)
 ![Resume Editor](./screenshots/skills.png)
 
-### Download/Share Resume
+### Download & Share Resume
 Shows the download and share options.
 ![Download Resume](./screenshots/download.png)
 
