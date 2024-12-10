@@ -1,39 +1,44 @@
-import React from 'react'
+import React from 'react';
 
-function PersonalDetailPreview({resumeInfo}) {
+function SkillsPreview({ resumeInfo }) {
   return (
-    <div>
-        <h2 className='font-bold text-xl text-center'
+    <div className='my-6'>
+      <h2
+        className='text-center font-bold text-sm mb-2'
         style={{
-            color:resumeInfo?.themeColor
+          color: resumeInfo?.themeColor || '#000',
         }}
-        >
-            {resumeInfo?.firstName} {resumeInfo?.lastName}</h2>
-        <h2 className='text-center text-sm font-medium'
-       >{resumeInfo?.jobTitle}</h2>
-       <h2 className='text-center font-normal text-xs'
+      >
+        Skills
+      </h2>
+      <hr
         style={{
-            color:resumeInfo?.themeColor
-        }}>{resumeInfo?.address}</h2>
-
-        <div className='flex justify-between'>
-            <h2 className='font-normal text-xs'
-             style={{
-                color:resumeInfo?.themeColor
-            }}>{resumeInfo?.phone}</h2>
-            <h2 className='font-normal text-xs'
-             style={{
-                color:resumeInfo?.themeColor
-            }}>{resumeInfo?.email}</h2>
-
-        </div>
-        <hr className='border-[1.5px] my-2'
-        style={{
-            borderColor:resumeInfo?.themeColor
+          borderColor: resumeInfo?.themeColor || '#000',
         }}
-        />
+      />
+
+      <div className='grid grid-cols-2 gap-3 my-4'>
+        {resumeInfo?.skills?.length > 0 ? (
+          resumeInfo.skills.map((skill, index) => (
+            <div key={index} className='flex items-center justify-between'>
+              <h2 className='text-xs'>{skill.name}</h2>
+              <div className='h-2 bg-gray-200 w-[120px]'>
+                <div
+                  className='h-2'
+                  style={{
+                    backgroundColor: resumeInfo?.themeColor || '#000',
+                    width: Math.min(skill?.rating * 20, 100) + '%',
+                  }}
+                ></div>
+              </div>
+            </div>
+          ))
+        ) : (
+          <p className='text-xs text-center'>No skills added</p>
+        )}
+      </div>
     </div>
-  )
+  );
 }
 
-export default PersonalDetailPreview
+export default SkillsPreview;
