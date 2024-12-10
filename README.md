@@ -142,5 +142,14 @@ src/
 ```
 
 ---
+## How to use 
+
+1. Navigate to the app's homepage.
+2. Click on "Create Resume."
+3. Add details like skills, experience, and education.
+4. Save your resume and choose a theme.
+5. Preview or download the resume.
+---
+
 
 
