@@ -130,3 +130,17 @@ Strapi will run at http://localhost:1337.
 
 ---
 
+## Project Structure
+
+```bash
+src/
+├── components/         # Reusable UI components
+├── pages/              # Application pages
+├── services/           # API services
+├── assets/             # Static assets (images, icons)
+└── App.jsx             # Main entry point
+```
+
+---
+
+
