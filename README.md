@@ -32,6 +32,7 @@ Shows the download and share options.
 ## Features
 
 - **Dynamic Resume Creation**: Add, update and delete professional experience, skills and educational qualifications.
+- **AI Tools**: Generate Summary and experience details using AI.
 - **Theming**: Customize your resume with gradient themes and dynamic colors.
 - **Preview & Download**: Preview and download resumes in various formats.
 - **API Integration**: Uses Strapi for backend management.
@@ -66,5 +67,15 @@ Before running the project, ensure you have the following installed:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ai-resume-builder.git
-cd ai-resume-builder
+git clone https://github.com/SuhasDhawale/Ai-Resume-Builder.git
+cd Ai-Resume-Builder
+```
+
+### Setup Environment Variables
+
+Create a .env file in the project root with the following variables:
+
+```bash
+VITE_BASE_URL=http://localhost:1337
+VITE_STRAPI_API_KEY=your_strapi_api_key
+```
