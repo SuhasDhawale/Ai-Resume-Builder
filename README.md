@@ -16,12 +16,16 @@ Displays all resumes created by the user.
 
 
 ### Resume Editor
-Edit and customize resumes with multiple options like 
+Edit and customize resumes with multiple options like Personal Details, Summary, Professional Experience, Education Details and Skills.
 ![Resume Editor](./screenshots/personalDetail.png)
 ![Resume Editor](./screenshots/summary.png)
 ![Resume Editor](./screenshots/professionalExp.png)
 ![Resume Editor](./screenshots/education.png)
 ![Resume Editor](./screenshots/skills.png)
+
+### Download/Share Resume
+Shows the download and share options.
+![Download Resume](./screenshots/download.png)
 
 
 
