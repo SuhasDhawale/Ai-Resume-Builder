@@ -76,6 +76,11 @@ cd Ai-Resume-Builder
 Create a .env file in the project root with the following variables:
 
 ```bash
-VITE_BASE_URL=http://localhost:1337
-VITE_STRAPI_API_KEY=your_strapi_api_key
+VITE_CLERK_PUBLISHABLE_KEY=Your_Clerk_key
+
+VITE_STRAPI_API_KEY=Your_Strapi_api_key
+
+VITE_GOOGLE_AI_API_KEY=Your_google_gemini_api_key
+
+VITE_BASE_URL=Your_backend_server_url
 ```
